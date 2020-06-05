@@ -1,0 +1,98 @@
+{
+  "name": "xavier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --hot --mode development --inline --port 3100 --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "cssnano": "^4.1.10",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^7.1.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react": "^7.20.0",
+    "fetch-mock": "^9.10.1",
+    "http-server": "^0.12.3",
+    "jest": "^26.0.1",
+    "json-server": "^0.16.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-fetch": "^2.6.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "react-testing-library": "^8.0.1",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-mock-store": "^1.5.4",
+    "webpack-bundle-analyzer": "^3.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@testing-library/react": "^10.2.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "less": "^3.11.2",
+    "less-loader": "^6.1.0",
+    "prettier": "2.0.5",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "version": "2018",
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true,
+        "experimentalObjectRestSpread": true
+      }
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true,
+      "jquery": true,
+      "jest": true
+    },
+    "rules": {
+      "no-debugger": "off",
+      "no-console": "off",
+      "no-unused-vars": "warn",
+      "react/prop-types": "warn"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
+}
